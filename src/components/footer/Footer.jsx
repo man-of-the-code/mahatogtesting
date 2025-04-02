@@ -48,7 +48,7 @@ const Footer = () =>{
                     <span className={styles.listTitle} >Social</span>
                     <Link href="/" >Facebook</Link>
                     <Link href="/" >Instagram</Link>
-                    <Link href="/" >Tikto</Link>
+                    <Link href="/" >Tiktok</Link>
                     <Link href="/" >Youtube</Link>
                 </div>
             </div>
