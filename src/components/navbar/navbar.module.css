@@ -1,4 +1,5 @@
 .container {
+  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10,30 +11,48 @@
   left: 6rem;
   right: 6rem;
   z-index: 2;
-  /* left: 6rem;
-  right: 6rem;
-  top: 0px;
-  z-index: 2; */
 }
 
-.social {
+/* .social {
   display: flex;
   gap: 10px;
-  flex: 1;
-}
+} */
 
 .logo {
-  flex: 1;
   text-align: center;
-  font-size: 36px;
+  font-size: 2em;
   font-weight: bold;
+  padding: 0.2em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  color: black;
+  border-radius: 25px;
+  background: linear-gradient(to right, cyan, cyan, red);
+}
+/* .sociallogo {
+  border: 1px solid cyan;
+  display: flex;
+  flex-direction: column;
+} */
+.jobs {
+  /* border: 1px solid cyan; */
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 0.2em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-radius: 25px;
+  background-color: aqua;
+  color: black;
+}
+.jobslink {
 }
 
 .links {
+  /* border: 1px solid cyan; */
   display: flex;
   align-items: center;
   gap: 20px;
-  flex: 1;
   font-size: 20px;
 }
 
@@ -63,9 +82,17 @@
     font-size: 24px;
   }
 }
+
+@media screen and (max-width: 675px) {
+  .links {
+    gap: 8px;
+  }
+}
+
 @media screen and (max-width: 640px) {
   .links {
     justify-content: flex-end;
+    gap: 15px;
   }
   .link {
     display: none;
